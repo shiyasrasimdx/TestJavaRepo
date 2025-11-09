@@ -41,7 +41,7 @@ public class openwebpage {
         js.executeScript("window.scrollBy(0, 250)");
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[1]")).click();
         Assert.assertTrue(driver.getCurrentUrl().equals("https://demoqa.com/elements"), "❌ Click did not navigate to the Elements page!");
-        Reporter.log("✅ Test Passed: GUser Able to click element tab!");
+        Reporter.log("✅ Test Passed: GUser Able to click element tabs!");
     }
     @Test(dependsOnMethods = "M2_clickelement")
      public void M3_Element_tab() {
