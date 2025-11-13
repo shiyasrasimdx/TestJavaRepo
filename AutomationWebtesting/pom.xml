@@ -6,6 +6,13 @@
   <version>1.0-SNAPSHOT</version>
   <name>Archetype - AutomationWebtesting</name>
   <url>http://maven.apache.org</url>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Maven Central Repository</name>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -35,6 +42,11 @@
             <artifactId>testng</artifactId>
             <version>7.10.1</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.1.1</version>
         </dependency>
     </dependencies>
 
