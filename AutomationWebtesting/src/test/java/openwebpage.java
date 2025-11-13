@@ -20,7 +20,7 @@ public class openwebpage {
         driver.get("https://demoqa.com/");
         driver.manage().window().maximize();
 
-        Reporter.log("Browser launched and window maximized<br>");
+        Reporter.log("Browser launches and window maximized<br>");
     }
 
     @Test
