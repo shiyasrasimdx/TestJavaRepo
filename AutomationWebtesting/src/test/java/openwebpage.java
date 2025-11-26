@@ -68,7 +68,7 @@ public class openwebpage {
 
     @Test(dependsOnMethods = "M2_clickElement")
     public void M3_ElementTab() {
-        test = extent.createTest("Open Text Box Tab");
+        test = extent.createTest("Open Text Box Tabs");
 
         try {
             driver.findElement(By.cssSelector("#item-0")).click();
