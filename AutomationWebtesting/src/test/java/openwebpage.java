@@ -50,7 +50,7 @@ public class openwebpage {
 
     @Test(dependsOnMethods = "M1_openDemoQA")
     public void M2_clickElement() {
-        test = extent.createTest("Click on Elements Card");
+        test = extent.createTest("Clicks on Elements Card");
 
         try {
             JavascriptExecutor js = (JavascriptExecutor) driver;
