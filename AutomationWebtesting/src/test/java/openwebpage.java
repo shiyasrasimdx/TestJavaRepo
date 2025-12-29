@@ -33,7 +33,7 @@ public class openwebpage {
 
     @Test
     public void M1_openDemoQA() {
-        test = extent.createTest("Launch DemoQA Website");
+        test = extent.createTest("Launch DemoQA Websites");
 
         String currentUrl = driver.getCurrentUrl();
         System.out.println("Current URL: " + currentUrl);
