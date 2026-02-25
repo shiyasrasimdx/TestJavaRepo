@@ -40,7 +40,7 @@ public class openwebpage {
 
         try {
             Assert.assertTrue(currentUrl.contains("https://demoqa.com/"),
-                    "User not navigated to DemoQA page!");
+                    "Users not navigated to DemoQA page!");
             test.pass("✅ Users navigated to DemoQA page successfully");
         } catch (AssertionError e) {
             test.fail("❌ Navigation to DemoQA failed: " + e.getMessage());
