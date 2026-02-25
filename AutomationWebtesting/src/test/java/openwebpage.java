@@ -36,7 +36,7 @@ public class openwebpage {
         test = extent.createTest("Launch DemoQA Websites");
 
         String currentUrl = driver.getCurrentUrl();
-        System.out.println("Current URL: " + currentUrl);
+        System.out.println("Current URLs: " + currentUrl);
 
         try {
             Assert.assertTrue(currentUrl.contains("https://demoqa.com/"),
@@ -55,8 +55,10 @@ public class openwebpage {
         try {
             JavascriptExecutor js = (JavascriptExecutor) driver;
             js.executeScript("window.scrollBy(0, 250)");
+            WebElement heading = driver.findElement(By.xpath("//h5[normalize-space()='Elements']"));
+            String headingText = heading.getText();
+            System.out.println("Heading Text: " + headingText);
             driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[1]")).click();
-
             Assert.assertTrue(driver.getCurrentUrl().equals("https://demoqa.com/elements"),
                     "❌ Click did not navigate to the Elements page!");
             test.pass("✅ Clicked on Elements card successfully");
